@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Categorias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Categorias</h1>
+    <form id="categoryForm">
+        <label for="nameCategory">Nome da Categoria:</label>
+        <input type="text" id="nameCategory" name="nameCategory" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+    <div id="message" style="display: none;"></div>
+
+    <div> 
+    <button id="consultarCategorias">Consultar Categorias</button>
+    <button onclick="window.location.href='../index.html'"> voltar para Home </button>
+    </div>
+    <table id="categoriesTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

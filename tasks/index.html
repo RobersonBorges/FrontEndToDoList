@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciar Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="window.location.href='../index.html'">
+      Voltar à Página Principal
+    </button>
+
+    <h1>Gerenciar Tarefas</h1>
+
+    <div class="column">
+      <h2>TODO</h2>
+      <button id="criarTarefa">Criar Tarefa</button>
+      <div id="todoTasks" class="task-container"></div>
+    </div>
+
+    <div class="column">
+      <h2>DOING</h2>
+      <div id="doingTasks" class="task-container"></div>
+    </div>
+
+    <div class="column">
+      <h2>PENDING</h2>
+      <div id="pendingTasks" class="task-container"></div>
+    </div>
+
+    <div class="column">
+      <h2>DONE</h2>
+      <div id="doneTasks" class="task-container"></div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Adicionar Categorias</h2>
+        <div id="categoryOptions"></div>
+        <button id="saveCategories">Salvar</button>
+      </div>
+    </div>
+
+    <div id="justificationModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Justificativa para Pendência</h2>
+        <textarea
+          id="justificationText"
+          placeholder="Digite a justificativa"
+        ></textarea>
+        <button id="saveJustification">Salvar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
